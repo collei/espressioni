@@ -1,0 +1,33 @@
+{
+	"name": "collei/espressioni",
+	"description": "Expression - safely evaluate math and boolean expressions.",
+	"keywords": ["expression", "math", "php", "Miles Kaufmann", "Jakub Jankiewicz"],
+	"homepage": "https://github.com/collei/espressioni",
+	"type": "library",
+	"license": "Custom",
+	"authors": [
+		{
+			"name": "Miles Kaufmann",
+			"email": "http://www.twmagic.com/"
+		},
+		{
+			"name": "Jakub Jankiewicz",
+			"email": "http://jcubic.pl/"
+		},
+		{
+			"name": "Collei de Laravel",
+			"email": "collei@collei.com.br"
+		}
+	],
+	"require": {
+		"php": "^7.4||^8.0"
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"autoload": {
+		"psr-4": {
+			"Espressioni\\": "src/Espressioni"
+		}
+	}
+}
