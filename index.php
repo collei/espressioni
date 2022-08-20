@@ -100,13 +100,13 @@ if ($expression) {
 	$result = $e->evaluate('3*f(42,a)');
 	echo "\r\n".'3*f(42,a) ----> ' . $result;
 	// create external functions
-	$e->addExternalFunction('foo', function($cinco) {
-		return "Cântebârrwlry á $cinco dám";
+	$e->addExternalFunction('foo', function($argument) {
+		return "Your argument: $argument";
 	});
 	// and use it
-	$result = $e->evaluate('foo(a)');
+	$result = $e->evaluate('foo("bar")');
 	//
-	echo "\r\n".'foo() ----> ' . $result;
+	echo "\r\n".'foo("bar") ----> ' . $result;
 } else {
 	echo 'Give a valid Expression to work with.';
 }

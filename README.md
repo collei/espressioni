@@ -56,12 +56,16 @@ Based on http://www.phpclasses.org/browse/file/11680.html, cred to Miles Kaufman
 	// and then use them
 	$result = $e->evaluate('3*f(42,a)');
 	// create external functions
-	$e->functions['foo'] = function() {
-		return "foo";
-	};
+	$e->addExternalFunction('foo', function($argument) {
+		return "Your argument: $argument";
+	});
 	// and use it
-	$result = $e->evaluate('foo()');
+	$result = $e->evaluate('foo("bar")');
 ?>
 ```
+### For Testing
+Download and unzip into the root of an Apache htdocs and call http://localhost/espressioni
+The index.php lets you run the same example above.
+
 ## License
 Custom License given by the original authors. See the LICENSE file for details.
