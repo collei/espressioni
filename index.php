@@ -70,8 +70,7 @@ function showside(sel)
 ####	my own practice workspace, also serves as example	####
 ################################################################
 
-if ($expression)
-{
+if ($expression) {
 	$e = new Expression();
 	// basic evaluation:
 	$result = $e->evaluate($expression);
@@ -108,9 +107,7 @@ if ($expression)
 	$result = $e->evaluate('foo(a)');
 	//
 	echo "\r\n".'foo() ----> ' . $result;
-}
-else
-{
+} else {
 	echo 'Give a valid Expression to work with.';
 }
 //
